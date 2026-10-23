@@ -245,3 +245,25 @@ define( 'WP_DEBUG_DISPLAY', false );
 
 残り: Custom Post Type Permalinks 3.4.5 → 3.5.6。「現在のPHPでは動作しません」と表示されるため、**PHP更新後に更新する**。
 メモ: SiteGuard と Limit Login Attempts Reloaded はどちらもログイン防御で役割が重複。全作業後にどちらか一方へ整理する。
+
+### 7-9. 有効テーマと SSL 証明書（2026-10-23）
+
+| 項目 | 確認結果 | 判断 |
+|---|---|---|
+| Air Messengers（フォルダ名 `air`） | 子テーマの表示なし。バージョン空欄・作者「匿名」 | **単独で動く独自テーマ**。親テーマはないので、標準テーマを消しても影響なし |
+| SSL証明書 | JPRS DV（発行元 JPRS Domain Validation Authority - G4） | 正常 |
+| 有効期間 | 2026-02-01 〜 **2027-02-28** | 2027年1月中に更新手続き |
+
+メモ: 業界ルールの変更で、2026年3月以降に発行されるSSL証明書は有効期間が短くなっていく（200日 → 2027年3月からは100日）。
+次回の更新からは年2回以上の更新が必要になるため、サーバ会社の「自動更新」が使えるか確認する。
+
+### 7-10. テーマ整理の方針
+
+| テーマ | 対応 |
+|---|---|
+| Air Messengers | 残す（使用中） |
+| Twenty Twenty-Two | 残して更新（非常用。インストール済みの中で一番新しい標準テーマ） |
+| Twenty Twenty-One | 削除 |
+| Twenty Twenty | 削除 |
+| Twenty Nineteen | 削除 |
+| Twenty Seventeen | 削除 |
